@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Amatic SC', sans-serif;
     box-sizing: border-box;
 }
 
@@ -38,10 +38,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-image: url(leopard-print-backdrop.jpg);
     color: white;
     padding: 50px;
     border-radius: 60px;
+    animation: gradient 10s ease infinite;
+    transition: background 1s;
+    transition: background 1s, transform 1s;
+    transition: box-shadow 0.6s ease-in-out;
 }
 
 #enter {
@@ -58,6 +62,8 @@ body {
 
 #maintitle {
     margin: 50px;
+    background-color: black;
+    padding: 10px;
 }
 
 #enter:hover {
@@ -74,7 +80,10 @@ body {
 
 #inside:hover {
     box-shadow: 0px 0px 20px 10px #ffffff;
-    animation: gradient 10s ease infinite;
-    transition: background 1s;
-    transition: background 1s, transform 1s;
+    transition: box-shadow 0.6s ease-in-out;
+}
+
+#inside:after {
+    box-shadow: 0px 0px 20px 10px #ffffff;
+    transition: box-shadow 0.6s ease-in-out;
 }

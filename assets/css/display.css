@@ -1,3 +1,85 @@
-*{
+* {
+    font-family: 'Amatic SC', sans-serif;
+}
+
+body {
+	background: linear-gradient(-45deg, #a300a3, #7c007c, #690064, #470041);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	50% {
+		background-position: 100% 70%;
+	}
+	50% {
+		background-position: 100% 70%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    background-image: url(leopard-print-backdrop.jpg);
+}
+
+#headertext {
     background-color: black;
+    font-size: 50px;
+    color: white;
+    padding: 20px;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+}
+
+#leftbar {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color: black;
+    padding: 20px;
+}
+
+#test {
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 15px;
+    font-size: 40px;
+}
+
+#test:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#test:active {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#leftbar:hover {
+    box-shadow: 0px 0px 20px 10px #ffffff;
+    transition: box-shadow 0.6s ease-in-out;
+}
+
+#leftbar:after {
+    box-shadow: 0px 0px 20px 10px #ffffff;
+    transition: box-shadow 0.6s ease-in-out;
 }

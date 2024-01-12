@@ -39,7 +39,7 @@ body {
 
 #main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #menubar {
@@ -66,6 +66,25 @@ body {
     border-radius: 15px;
     font-size: 40px;
     margin: auto;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#items {
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 40px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
 }
 
 #test:hover {

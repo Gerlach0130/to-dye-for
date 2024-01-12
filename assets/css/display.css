@@ -3,10 +3,9 @@
 }
 
 body {
-	background: linear-gradient(-45deg, #fc80fc, #d46ad4, #a855a6, #8d4887);
+	background: linear-gradient(-45deg, #fc80fc, #b158b1, #ce68cc, #ff83f5, #fc80fc);
 	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-	height: 100vh;
+	animation: gradient 5s ease infinite;
 }
 
 @keyframes gradient {
@@ -25,13 +24,15 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 20px;
+    margin: auto;
     background-image: url(leopard-print-backdrop.jpg);
+    border-radius: 30px;
+    width: 95%;
 }
 
 #headertext {
     background-color: black;
-    font-size: 50px;
+    font-size: 60px;
     color: white;
     padding: 20px;
 }
@@ -41,16 +42,20 @@ body {
     flex-direction: row;
 }
 
-#leftbar {
+#menubar {
     display: flex;
-    flex-direction: column;
-    margin: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
     color: white;
     border-style: solid;
     border-color: black;
     border-radius: 30px;
     background-color: black;
     padding: 20px;
+    width: 90%;
 }
 
 #test {
@@ -60,6 +65,7 @@ body {
     border-style: solid;
     border-radius: 15px;
     font-size: 40px;
+    margin: auto;
 }
 
 #test:hover {
@@ -74,12 +80,12 @@ body {
     cursor: pointer;
 }
 
-#leftbar:hover {
+#menubar:hover {
     box-shadow: 0px 0px 20px 10px #ffffff;
     transition: box-shadow 0.6s ease-in-out;
 }
 
-#leftbar:after {
+#menubar:after {
     box-shadow: 0px 0px 20px 10px #ffffff;
     transition: box-shadow 0.6s ease-in-out;
 }

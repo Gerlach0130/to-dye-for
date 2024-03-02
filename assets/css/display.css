@@ -58,7 +58,7 @@ body {
     width: 90%;
 }
 
-#test {
+.test {
     background-color: black;
     color:white;
     text-decoration: none;
@@ -87,13 +87,13 @@ body {
     padding: 20px;
 }
 
-#test:hover {
+.test:hover {
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
-#test:active {
+.test:active {
     background-color: black;
     color: white;
     cursor: pointer;

@@ -5,36 +5,10 @@ const allProductsBtn = document.getElementById('allproductsbtn');
 const header = document.getElementById('productheader');
 const container = document.getElementById('container');
 
-// function showMakeUp() {
-//     header.innerHTML = `Showing Make Up Products`;
-//     container.innerHTML = `<style>
-//     img {
-//         height: 200px;
-//         width: 50px;
-//         margin: auto;
-//     }
-//     h4, p {
-//         text-align: center;
-//     }
-//     .card {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         margin: auto;
-//         align-items: center;
-//     }
-//     p {
-//         font-size: 25px;
-//     }
-//     </style>
-//         <div class="card">
-//             <img src="./assets/images/amikatheshield.jpg" style="width:100px">
-//             <div class="innercard">
-//                 <h3><b>Amika The Shield</b></h3>
-//                 <p><strong>$30</strong></p>
-//             </div>
-//         </div>`
-// };
+function showMakeUp() {
+    header.innerHTML = `Showing Make Up Products`;
+    container.innerHTML = ``
+};
 
 function showHairCare() {
     header.innerHTML = `Showing Hair Care Products`;
@@ -193,67 +167,15 @@ function showHairCare() {
         </div>`;
 };
 
-// function showEarrings() {
-//     header.innerHTML = `Showing Current Earrings`;
-//     container.innerHTML = `<style>
-//     img {
-//         height: 200px;
-//         width: 50px;
-//         margin: auto;
-//     }
-//     h4, p {
-//         text-align: center;
-//     }
-//     .card {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         margin: auto;
-//         align-items: center;
-//     }
-//     p {
-//         font-size: 25px;
-//     }
-//     </style>
-//         <div class="card">
-//             <img src="./assets/images/amikatheshield.jpg" style="width:100px">
-//             <div class="innercard">
-//                 <h3><b>Amika The Shield</b></h3>
-//                 <p><strong>$30</strong></p>
-//             </div>
-//         </div>`
-// };
+function showEarrings() {
+    header.innerHTML = `Showing Current Earrings`;
+    container.innerHTML = ``
+};
 
-// function showAllProducts() {
-//     header.innerHTML = `Showing All Products`;
-//     container.innerHTML = `<style>
-//     img {
-//         height: 200px;
-//         width: 50px;
-//         margin: auto;
-//     }
-//     h4, p {
-//         text-align: center;
-//     }
-//     .card {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         margin: auto;
-//         align-items: center;
-//     }
-//     p {
-//         font-size: 25px;
-//     }
-//     </style>
-//         <div class="card">
-//             <img src="./assets/images/amikatheshield.jpg" style="width:100px">
-//             <div class="innercard">
-//                 <h3><b>Amika The Shield</b></h3>
-//                 <p><strong>$30</strong></p>
-//             </div>
-//         </div>`
-// };
+function showAllProducts() {
+    header.innerHTML = `Showing All Products`;
+    container.innerHTML = ``
+};
 
 makeUpBtn.addEventListener('click', showMakeUp);
 hairCareBtn.addEventListener('click', showHairCare);
